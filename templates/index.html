@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="en">
+  {% include 'nav.html' %}
+<!-- Mirrored from themezinho.net/uon/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Feb 2024 09:43:55 GMT -->
+<style>
+  .training-category {
+  margin-bottom: 30px;
+}
+
+.training-category h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.training-category ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.training-category li {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.custom-bullet {
+  list-style: none;
+  padding: 0;
+}
+
+.custom-bullet li {
+  position: relative;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.custom-bullet li:before {
+  content: '\2022';
+  position: absolute;
+  left: 0;
+  color: #007bff; /* Choose your desired color */
+}
+.staff-name{ 
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0 0 5px;
+  color: #333;
+}
+
+.staff-title{
+  font-size: 1em;
+  color: #333;
+  font-weight: bold;
+  margin: 0 0 15px;
+}
+/************************/
+
+.staff-row{
+  width: 1200px; 
+  margin: 0 auto;
+}
+
+.staff-wrap{
+  width: 200px; /*This will change*/
+  height: auto;
+}
+
+
+.staff-link{
+  margin: 10px 10px;
+  text-decoration: none;
+  display: inline-block;
+  border: 3px solid #f3f3f3;
+  -webkit-transition: border .8s ease;
+  -moz-transition: border .8s ease;
+  -o-transition: border .8s ease;
+  transition: border .8s ease;
+}
+
+.staff-link:hover{
+  border: 3px solid #D21034;
+}
+
+.staff-img{
+  width:200px;
+  -webkit-transition: opacity .8s ease;
+  -moz-transition: opacity .8s ease;
+  -o-transition: opacity .8s ease;
+  transition: opacity .8s ease;
+  border-radius: 100px;
+  height: 13rem;
+}
+
+.staff-img:hover{
+  opacity: .7;
+}
+
+.staff-info{
+  padding: 10px;
+}
+
+
+/*Media Queries*/
+@media all and (max-width: 1200px){
+  
+  .staff-row{
+  width: 767px;
+}
+  .staff-wrap{
+  width: 100%; /*This will change*/
+  height: auto;
+}
+  
+}
+
+
+@media all and (max-width: 800px){
+  .staff-row{
+    width: 800px;
+  }
+  
+  .staff-wrap{
+    width: 200px; /*This will change*/
+    height: auto;
+  }
+  .staff-img{
+    width: 100%;
+    height: 10rem;
+  }
+}
+
+@media all and (max-width: 585px){
+  .staff-row{
+    width: 350px;
+  }
+  
+  .staff-wrap{
+    width: 120px; /*This will change*/
+    height: auto;
+  }
+  
+  .staff-link{
+  margin: 3px 3px;
+  }
+  
+  .staff-name{ 
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0 0 5px;
+  color: #333;
+}
+
+.staff-title{
+  font-size: .8em;
+  color: #333;
+  font-weight: bold;
+  margin: 0 0 15px;
+}
+  .staff-office{
+    font-size: .8em;
+  }
+}
+
+
+@media all and (max-width: 360px){
+  .staff-row{
+    width: 288px;
+  }
+  
+  .staff-wrap{
+    width: 130px; /*This will change*/
+    height: auto;
+  }
+  
+  .staff-link{
+  margin: 3px 3px;
+  }
+  
+  .staff-name{ 
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0 0 5px;
+  color: #333;
+}
+
+.staff-title{
+  font-size: .8em;
+  color: #333;
+  font-weight: bold;
+  margin: 0 0 15px;
+}
+  .staff-office{
+    font-size: .8em;
+  }
+}
+</style>
+<body>
+  {% include 'header.html' %}
+
+<!-- end header -->
+<section class="slider">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="slide-inner bg-image" data-background="../static/images/slidercm.jpeg" data-text="What we do<span>Innovate</span>">
+          <div class="container">
+            <h6 data-swiper-parallax="100">Innovate</h6>
+            <h2 data-swiper-parallax="200"><span>.</span>Bridging the gap</h2>
+            <p data-swiper-parallax="300">Bridging the gap between politics and innovation with our team of experts that is dedicated to providing tailored solutions to our clients</p>
+            <div class="clearfix"></div>
+            <a href="#" data-swiper-parallax="200">Discover More<span></span></a> </div>
+          <!-- end container --> 
+        </div>
+        <!-- end slide-inner --> 
+      </div>
+      <!-- end swiper-slide -->
+      <div class="swiper-slide">
+        <div class="slide-inner bg-image" style="background-image: url(../static/images/slidercm2.jpeg);" data-background="../static/images/slidercm2.jpeg" data-text="AGRIC TECH & <span>BUSINESS</span>">
+          <div class="container">
+            <h6 data-swiper-parallax="100">agrictech/business</h6>
+            <h2 data-swiper-parallax="200"><span>.</span>Agricultural Education</h2>
+            <p data-swiper-parallax="300">We offer educational programs in agrictech and agricbusiness, providing valuable insights into emerging trends and technologies in the field  </p>
+            <div class="clearfix"></div>
+            <a href="#" data-swiper-parallax="200">Discover More<span></span></a> </div>
+          <!-- end container --> 
+        </div>
+        <!-- end slide-inner --> 
+      </div>
+      <!-- end swiper-slide -->
+      <div class="swiper-slide">
+        <div class="slide-inner bg-image" data-background="../static/images/slidercm3.jpeg" data-text="CONSULTING<span>AND EVENT MANAGEMENT</span>">
+          <div class="container">
+            <h6 data-swiper-parallax="100">seminars</h6>
+            <h2 data-swiper-parallax="200"><span>.</span>Innovation Consultation</h2>
+            <p data-swiper-parallax="300">Our team of experts provides tailored solutions to clients looking to enhance innovation in their organizations </p>
+            <div class="clearfix"></div>
+            <a href="#" data-swiper-parallax="200">Discover More<span></span></a> </div>
+          <!-- end container --> 
+        </div>
+        <!-- end slide-inner --> 
+      </div>
+      <!-- end swiper-slide --> 
+    </div>
+    <!-- end swiper-wrapper -->
+    <div class="swiper-custom-pagination"></div>
+    <!-- end swiper-custom-pagination --> 
+  </div>
+  <!-- end swiper-container --> 
+</section>
+<!-- end slider -->
+<section class="featured-services">
+  <div class="content-wrapper">
+    <div class="container">
+      <div class="content-box wow fadeIn"> <span></span>
+        <h3>WHO WE ARE</h3>
+        <p>We are one global team. With offices across two continents providing cutting edge solutions to clients across industries.
+
+        </p>
+        <a href="#"><img src="../static/images/icon-right-arrow.svg" alt="Image"></a> </div>
+      <!-- end content-box -->
+      <div class="content-box wow fadeIn"> <span></span>
+        <h3>WHAT WE BELIEVE</h3>
+        <p>Our values shape the character of the company and our interactions with clients. They serve as the foundation for how we make decisions.</p>
+        <a href="#"><img src="../static/images/icon-right-arrow.svg" alt="Image"></a> </div>
+      <!-- end content-box -->
+      <div class="content-box wow fadeIn"> <span></span>
+        <h3>HOW WE WORK</h3>
+        <p>We bring together leaders of industry, business management experts in strategy to create solutions to clients for the sake of impact.
+
+        </p>
+        <a href="#"><img src="../static/images/icon-right-arrow.svg" alt="Image"></a> </div>
+      <!-- end content-box --> 
+    </div>
+    <!-- end container --> 
+  </div>
+  <!-- end content-wrapper -->
+
+  <!-- end logos --> 
+</section>
+<!-- end featured-services -->
+<section class="image-content-box">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 wow fadeIn">
+        <div class="section-title"> <span>01</span>
+          <h2>Training</h2>
+          <h6>Executive workshop and training for effective<br>leadership, local, state and legislative government administartion and good governance </h6>
+        </div>
+        <!-- end section-title --> 
+      </div>
+      <!-- end col-12 -->
+      <div class="col-12">
+        <div class="content-box wow fadeIn">
+          <figure><img src="../static/images/image003.jpeg" alt="Image"></figure>
+          <div class="training-category">
+            <h4>Special Training</h4>
+            <ul class="custom-bullet">
+              <li>Strategic Decision-Making in Government Leadership</li>
+              <li>Conflict Resolution and Negotiation for Public Administrators</li>
+              <li>Ethical Leadership: Building Trust in Government Institutions</li>
+              <li>Crisis Management and Resilience in Public Service</li>
+              <li>Innovation and Change Management in Government Agencies</li>
+            </ul>
+          </div>
+         
+        </div>
+        <!-- end content-box -->
+        <div class="content-box wow fadeIn">
+          <figure><img src="../static/images/image002.jpeg" alt="Image"></figure>
+          <div class="training-category">
+            <h4>Technical Training</h4>
+            <ul class="custom-bullet">
+              <li>Data Analytics for Evidence-Based Policy Making</li>
+              <li>Digital Transformation in Government Services</li>
+              <li>Cybersecurity Awareness for Public Sector Professionals</li>
+              <li>Project Management Essentials for Government Projects</li>
+              <li>Effective Communication Strategies for Government Officials</li>
+              <li>Skill acquisition and empowerment workshops etc....</li>
+            </ul>
+          </div>
+
+         
+        </div>
+        <!-- end content-box -->
+        <div class="content-box wow fadeIn">
+          <figure><img src="../static/images/image004.jpeg" alt="Image"></figure>
+          <div class="training-category">
+            <h4>Workshop</h4>
+          <ul class="custom-bullet">
+            <li>Stakeholder Engagement and Public Participation</li>
+            <li>Leadership Development for Emerging Leaders in Government</li>
+            <li>Policy Analysis and Legislative Drafting Workshop</li>
+            <li>Effective Team Building and Collaboration in Government</li>
+            <li>Financial Management and Budgeting in the Public Sector</li>
+          </ul>
+          </div>
+          
+                </div>
+        <!-- end content-box --> 
+      </div>
+      <!-- end col-12 --> 
+    </div>
+    <!-- end row --> 
+  </div>
+  <!-- end container --> 
+</section>
+<!-- end image-content-box -->
+<section class="side-image-content moved-space" id="counter">
+  <div class="sides bg-image wow fadeIn" data-background="images/side-image01.jpg">
+    <div class="video">
+      <video src="../static/images/video.mp4" loop autoplay muted></video>
+    </div>
+    <!-- end video --> 
+    <a href="../static/images/video.mp4" class="play-btn" data-fancybox>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 viewBox="0 0 104 104" enable-background="new 0 0 104 104" xml:space="preserve">
+      <path fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" d="M26,35h52L52,81L26,35z"/>
+      <circle class="video-play-circle" fill="none" stroke="#fff" stroke-width="5" stroke-miterlimit="10" cx="52" cy="52" r="50"/>
+    </svg>
+    <span class="video-play-outline"></span> </a> </div>
+  <!-- end sides -->
+  <div class="sides bg-color wow fadeIn" data-background="#405089">
+    <div class="inner">
+      <div class="section-title light"> <span>02</span>
+        <h2>Trade and Investment Summits</h2>
+        <h6>Join industry leaders, policymakers, and experts from around the globe at our Trade and Investment Summits. Discover new opportunities, forge strategic partnerships, and gain insights into the latest trends shaping international trade and investment</h6>
+      </div>
+      <!-- end section-title -->
+      <ul class="counter">
+        <li> <span class="odometer" id="1"></span><span class="symbol">+</span> <small>Events</small> </li>
+        <li> <span class="odometer" id="2"></span><span class="symbol">k</span> <small>Participant</small> </li>
+        <li> <span class="odometer" id="3"></span><span class="symbol"></span> <small>cities</small> </li>
+      </ul>
+      <p>Whether you're a seasoned investor, a budding entrepreneur, or a government representative, our summits offer a dynamic platform to network, learn, and drive economic growth. Don't miss this unparalleled opportunity to explore new markets, unlock potential, and chart the course for future success. Register now and be part of the conversation that shapes the future of global commerce.</p>
+      <img src="../static/images/testimonial-name.png" alt="Image"> </div>
+    <!-- end inner --> 
+  </div>
+  <!-- end sides --> 
+</section>
+<!-- end side-image-content -->
+<section class="icon-content-box">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 wow fadeIn">
+        <div class="section-title"> <span>03</span>
+          <h2>Foreign Direct Investment Expertise</h2>
+          <h6>Explore our network of foreign direct investment (FDI) with our expertise-driven solutions. Our comprehensive approach covers every facet of FDI, from meticulous analysis and targeted marketing to strategic investment and rigorous research.</h6>
+        </div>
+        <!-- end section-title --> 
+      </div>
+      <!-- end col-12 -->
+      
+      <div class="col-12">
+        <div class="content-box wow fadeIn">
+          <div class="flip-box" data-flip-direction="horizontal-to-left" data-h_text_align="left" data-v_text_align="center">
+            <div class="flip-box-front" data-bg-overlay="true" data-text-color="light">
+              <div class="inner"> <span>01</span>
+                <h4>analyses</h4>
+                <figure> <img src="../static/images/icon01.png" alt="Image"> </figure>
+              </div>
+              <!-- end inner --> 
+            </div>
+            <!-- end flip-box-front -->
+            <div class="flip-box-back">
+              <div class="inner">
+                  <h4>analyses</h4>
+                  <p>In-depth market analysis to identify lucrative investment opportunities<br>
+                   </p>
+              </div>
+              <!-- end inner --> 
+            </div>
+            <!-- end end flip-box-back --> 
+          </div>
+          <!-- end flip-box --> 
+        </div>
+        <!-- end content-box -->
+        <div class="content-box wow fadeIn">
+		 <div class="flip-box" data-flip-direction="horizontal-to-left" data-h_text_align="left" data-v_text_align="center">
+            <div class="flip-box-front" data-bg-overlay="true" data-text-color="light">
+              <div class="inner"> <span>02</span>
+                <h4>marketting</h4>
+                <figure> <img src="../static/images/icon02.png" alt="Image"> </figure>
+              </div>
+              <!-- end inner --> 
+            </div>
+            <!-- end flip-box-front -->
+            <div class="flip-box-back">
+              <div class="inner">
+                  <h4>marketting</h4>
+                  <p>Development of targeted marketing strategies to attract foreign investors</p>
+              </div>
+              <!-- end inner --> 
+            </div>
+            <!-- end end flip-box-back --> 
+          </div>
+          <!-- end flip-box -->   
+       </div>
+        <!-- end content-box -->
+      
+        <!-- end content-box -->
+        <div class="content-box wow fadeIn"> 
+		  <div class="flip-box" data-flip-direction="horizontal-to-left" data-h_text_align="left" data-v_text_align="center">
+            <div class="flip-box-front" data-bg-overlay="true" data-text-color="light">
+              <div class="inner"> <span>04</span>
+                <h4>investment</h4>
+                <figure> <img src="../static/images/icon04.png" alt="Image"> </figure>
+              </div>
+              <!-- end inner --> 
+            </div>
+            <!-- end flip-box-front -->
+            <div class="flip-box-back">
+              <div class="inner">
+                  <h4>investment</h4>
+                  <p>Facilitation of investment transactions, including due diligence, negotiation, and deal structuring</p>
+              </div>
+              <!-- end inner --> 
+            </div>
+            <!-- end end flip-box-back --> 
+          </div>
+          <!-- end flip-box --> 
+          </div>
+        <!-- end content-box -->
+        <div class="content-box wow fadeIn"> 
+		  <div class="flip-box" data-flip-direction="horizontal-to-left" data-h_text_align="left" data-v_text_align="center">
+            <div class="flip-box-front" data-bg-overlay="true" data-text-color="light">
+              <div class="inner"> <span>05</span>
+                <h4>researches</h4>
+                <figure> <img src="../static/images/icon05.png" alt="Image"> </figure>
+              </div>
+              <!-- end inner --> 
+            </div>
+            <!-- end flip-box-front -->
+            <div class="flip-box-back">
+              <div class="inner">
+                  <h4>researches</h4>
+                  <p> Conducting comprehensive research on market trends, consumer behavior, and competitor analysis</p>
+              </div>
+              <!-- end inner --> 
+            </div>
+            <!-- end end flip-box-back --> 
+          </div>
+          <!-- end flip-box --> 
+          </div>
+        <!-- end content-box --> 
+      </div>
+      <!-- end col-12 --> 
+    </div>
+    <!-- end row --> 
+  </div>
+  <!-- end container --> 
+</section>
+<!-- end icon-content-box -->
+<section class="image-content-over-box">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="section-title wow fadeIn"> <span>04</span>
+          <h2>Corporate media</h2>
+          <h6>Explore the realm of corporate media with our comprehensive solutions tailored to elevate your brand's presence and engagement.  </h6>
+        </div>
+        <!-- end section-title --> 
+      </div>
+      <!-- end col-3 -->
+      <div class="col-lg-8">
+        <div class="swiper-carousel wow fadeIn">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <figure style="height: 20rem;"> <img style="height: 15rem;" src="../static/images/image007.jpeg" alt="Image">
+                <figcaption>
+                  <small>Business Constultation</small> </figcaption>
+              </figure>
+            </div>
+            <!-- end swiper-slide -->
+            <div class="swiper-slide">
+              <figure> <img style="height: 15rem;" src="../static/images/image006.jpeg" alt="Image">
+                <figcaption>
+                  <small>Development Constultation</small> </figcaption>
+              </figure>
+            </div>
+            <!-- end swiper-slide -->
+            <div class="swiper-slide">
+              <figure> <img style="height: 15rem;" src="../static/images/image009.jpeg" alt="Image">
+                <figcaption>
+                  <small>Training Constultation</small> </figcaption>
+              </figure>
+            </div>
+            <!-- end swiper-slide -->
+            <div class="swiper-slide">
+              <figure> <img style="height: 15rem;" src="../static/images/image011.jpg" alt="Image">
+                <figcaption>
+                  <small>Accounting Constultation</small> </figcaption>
+              </figure>
+            </div>
+            <!-- end swiper-slide -->
+            <div class="swiper-slide">
+              <figure> <img style="height: 15rem;" src="../static/images/image0011.jpg" alt="Image">
+                <figcaption>
+                  <small>Motivation Constultation</small> </figcaption>
+              </figure>
+            </div>
+            <!-- end swiper-slide -->
+            <div class="swiper-slide">
+              <figure> <img style="height: 15rem;" src="../static/images/image002.jpeg" alt="Image">
+                <figcaption>
+                  <small>Business Constultation</small> </figcaption>
+              </figure>
+            </div>
+            <!-- end swiper-slide --> 
+          </div>
+          <!--end swiper-wrapper -->
+          <div class="swiper-button-next"><img src="../static/images/icon-right-arrow.svg" alt="Image"></div>
+          <div class="swiper-button-prev"><img src="../static/images/icon-right-arrow.svg" alt="Image"></div>
+        </div>
+        <!-- end swiper-carousel --> 
+      </div>
+      <!-- end col-6 --> 
+    </div>
+  </div>
+  <!-- end container --> 
+</section>
+<!-- end image-content-over-box -->
+
+<!-- end showcases -->
+
+
+
+<!-- end team-members -->
+<section class="press-relases">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-12">
+				<div class="section-title"> <span></span>
+          <h2>press releases</h2>
+        </div>
+        <!-- end section-title -->
+			</div>
+			<!-- end col-12 -->
+			{% for blog in blogs %}
+
+			<div class="col-lg-3 col-md-4">
+				<a href="{{ url_for('view_blog', blog_id=blog.id) }}">
+					<figure>
+						<a href="{{ url_for('view_blog', blog_id=blog.id) }}" > <img
+							alt="Office"
+							src="{{ url_for('static', filename='uploads/' + blog.main_image_filename) }}"
+						  /></a>
+						<figcaption>
+							<h5>{{ blog.title }}</h5>
+						
+							<small></small>
+						</figcaption>
+						</figure>
+				</a>
+			
+			</div>
+			{% endfor %}
+			<!-- end col-3 -->
+			
+			<!-- end col-3 -->
+		</div>
+		<!-- end row -->
+	</div>
+	<!-- end container -->
+</section>
+
+<!-- end latest-news -->
+<!-- <section class="info-box" style="background-image: url(../static/images/image011.jpg);">
+  <div class="container wow fadeIn">
+    <h3 style="font-size: 80px;">Let’s get started</h3>
+    <h6>Bridging the gap between politics and investment</h6>
+    
+</section> -->
+<!-- end info-box -->
+<section class="request-form">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 wow fadeIn">
+          <h2>request form</h2>
+          
+        </div>
+        <!-- end section-title --> 
+      </div>
+      <!-- end col-5 -->
+      <div class="col-lg-7 wow fadeIn">
+        <form class="row inner">
+          <div class="form-group col-md-6">
+            <label>Your name</label>
+            <input type="text">
+          </div>
+          <!-- end form-group -->
+          <div class="form-group col-md-6">
+            <label>Your surname</label>
+            <input type="text">
+          </div>
+          <!-- end form-group -->
+          <div class="form-group col-md-4">
+            <label>Your Country</label>
+            <input type="text" required>
+            <!-- end select-box --> 
+          </div>
+          <!-- end form-group -->
+          <div class="form-group col-md-4">
+            <label>Your City</label>
+            <input type="text" required>
+            <!-- end select-box --> 
+          </div>
+          <!-- end form-group -->
+          <div class="form-group col-md-4">
+            <label>Your Street</label>
+            <input type="text" required>
+            <!-- end select-box --> 
+          </div>
+          <!-- end form-group -->
+          
+          <!-- end form-group -->
+          <div class="form-group col-md-4">
+            <label>Your Purpose</label>
+            <input type="text" required>
+          <!-- end form-group -->
+          <div class="form-group col-md-4">
+            <label>&nbsp;</label>
+            <input type="submit" value="SUBMIT">
+          </div>
+          <!-- end form-group -->
+        </form>
+        <!-- end form --> 
+      </div>
+      <!-- end col-7 --> 
+    </div>
+    <!-- end row --> 
+  </div>
+  <!-- end container --> 
+</section>
+<!-- end consultation-form -->
+{% include 'footer.html' %}
+</body>
+
+<!-- Mirrored from themezinho.net/uon/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Feb 2024 09:44:47 GMT -->
+</html>

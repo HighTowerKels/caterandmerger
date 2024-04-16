@@ -1,0 +1,333 @@
+Traceback (most recent call last):
+  File "/home/getophfu/newcaterandmerger/passenger_wsgi.py", line 1, in <module>
+    from server import app as application
+  File "/home/getophfu/newcaterandmerger/server.py", line 5, in <module>
+    from flask_wtf import FlaskForm
+ModuleNotFoundError: No module named 'flask_wtf'
+Traceback (most recent call last):
+  File "/home/getophfu/newcaterandmerger/passenger_wsgi.py", line 1, in <module>
+    from server import app as application
+  File "/home/getophfu/newcaterandmerger/server.py", line 5, in <module>
+    from flask_wtf import FlaskForm
+ModuleNotFoundError: No module named 'flask_wtf'
+Traceback (most recent call last):
+  File "/home/getophfu/newcaterandmerger/passenger_wsgi.py", line 1, in <module>
+    from server import app as application
+  File "/home/getophfu/newcaterandmerger/server.py", line 5, in <module>
+    from flask_wtf import FlaskForm
+ModuleNotFoundError: No module named 'flask_wtf'
+Traceback (most recent call last):
+  File "/home/getophfu/newcaterandmerger/passenger_wsgi.py", line 1, in <module>
+    from server import app as application
+  File "/home/getophfu/newcaterandmerger/server.py", line 5, in <module>
+    from flask_wtf import FlaskForm
+ModuleNotFoundError: No module named 'flask_wtf'
+Traceback (most recent call last):
+  File "/home/getophfu/newcaterandmerger/passenger_wsgi.py", line 1, in <module>
+    from server import app as application
+  File "/home/getophfu/newcaterandmerger/server.py", line 5, in <module>
+    from flask_wtf import FlaskForm
+ModuleNotFoundError: No module named 'flask_wtf'
+Traceback (most recent call last):
+  File "/home/getophfu/newcaterandmerger/passenger_wsgi.py", line 1, in <module>
+    from server import app as application
+  File "/home/getophfu/newcaterandmerger/server.py", line 5, in <module>
+    from flask_wtf import FlaskForm
+ModuleNotFoundError: No module named 'flask_wtf'
+Traceback (most recent call last):
+  File "/home/getophfu/newcaterandmerger/passenger_wsgi.py", line 1, in <module>
+    from server import app as application
+  File "/home/getophfu/newcaterandmerger/server.py", line 5, in <module>
+    from flask_wtf import FlaskForm
+ModuleNotFoundError: No module named 'flask_wtf'
+Traceback (most recent call last):
+  File "/home/getophfu/newcaterandmerger/passenger_wsgi.py", line 1, in <module>
+    from server import app as application
+  File "/home/getophfu/newcaterandmerger/server.py", line 5, in <module>
+    from flask_wtf import FlaskForm
+ModuleNotFoundError: No module named 'flask_wtf'
+Traceback (most recent call last):
+  File "/home/getophfu/newcaterandmerger/passenger_wsgi.py", line 1, in <module>
+    from server import app as application
+  File "/home/getophfu/newcaterandmerger/server.py", line 9, in <module>
+    from flask_migrate import Migrate
+ModuleNotFoundError: No module named 'flask_migrate'
+Traceback (most recent call last):
+  File "/home/getophfu/newcaterandmerger/passenger_wsgi.py", line 1, in <module>
+    from server import app as application
+  File "/home/getophfu/newcaterandmerger/server.py", line 9, in <module>
+    from flask_migrate import Migrate
+ModuleNotFoundError: No module named 'flask_migrate'
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+[2024-03-24 08:53:33,811] ERROR in app: Exception on /signup [POST]
+Traceback (most recent call last):
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/getophfu/newcaterandmerger/server.py", line 178, in signup
+    if form.validate_on_submit():
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask_wtf/form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate(extra_validators=extra_validators)
+TypeError: validate() got an unexpected keyword argument 'extra_validators'
+[2024-03-24 08:55:46,946] ERROR in app: Exception on /signup [POST]
+Traceback (most recent call last):
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/getophfu/newcaterandmerger/server.py", line 178, in signup
+    if form.validate_on_submit():
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask_wtf/form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate(extra_validators=extra_validators)
+TypeError: validate() got an unexpected keyword argument 'extra_validators'
+[2024-03-24 08:58:21,234] ERROR in app: Exception on /signup [POST]
+Traceback (most recent call last):
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/getophfu/newcaterandmerger/server.py", line 178, in signup
+    if form.validate_on_submit():
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask_wtf/form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate(extra_validators=extra_validators)
+TypeError: validate() got an unexpected keyword argument 'extra_validators'
+[2024-03-24 08:58:54,069] ERROR in app: Exception on /signup [POST]
+Traceback (most recent call last):
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/getophfu/newcaterandmerger/server.py", line 178, in signup
+    if form.validate_on_submit():
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask_wtf/form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate(extra_validators=extra_validators)
+TypeError: validate() got an unexpected keyword argument 'extra_validators'
+[2024-03-24 09:05:03,899] ERROR in app: Exception on /signup [POST]
+Traceback (most recent call last):
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/getophfu/newcaterandmerger/server.py", line 178, in signup
+    if form.validate_on_submit():
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask_wtf/form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate(extra_validators=extra_validators)
+TypeError: validate() got an unexpected keyword argument 'extra_validators'
+[2024-03-24 09:05:46,058] ERROR in app: Exception on /signup [POST]
+Traceback (most recent call last):
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/getophfu/newcaterandmerger/server.py", line 178, in signup
+    if form.validate_on_submit():
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask_wtf/form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate(extra_validators=extra_validators)
+TypeError: validate() got an unexpected keyword argument 'extra_validators'
+[2024-03-24 09:14:40,224] ERROR in app: Exception on /signup [POST]
+Traceback (most recent call last):
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/getophfu/newcaterandmerger/server.py", line 172, in signup
+    if form.validate_on_submit():
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask_wtf/form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate(extra_validators=extra_validators)
+TypeError: validate() got an unexpected keyword argument 'extra_validators'
+[2024-03-24 09:15:06,483] ERROR in app: Exception on /signup [POST]
+Traceback (most recent call last):
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/getophfu/newcaterandmerger/server.py", line 172, in signup
+    if form.validate_on_submit():
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask_wtf/form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate(extra_validators=extra_validators)
+TypeError: validate() got an unexpected keyword argument 'extra_validators'
+[2024-03-24 09:20:23,069] ERROR in app: Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/getophfu/newcaterandmerger/server.py", line 199, in login
+    form = LoginForm()
+NameError: name 'LoginForm' is not defined
+[2024-03-24 09:20:32,451] ERROR in app: Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/getophfu/newcaterandmerger/server.py", line 199, in login
+    form = LoginForm()
+NameError: name 'LoginForm' is not defined
+[2024-03-24 09:23:57,549] ERROR in app: Exception on /login [POST]
+Traceback (most recent call last):
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/getophfu/newcaterandmerger/server.py", line 205, in login
+    if form.validate_on_submit():
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask_wtf/form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate(extra_validators=extra_validators)
+TypeError: validate() got an unexpected keyword argument 'extra_validators'
+[2024-03-24 09:26:38,989] ERROR in app: Exception on /login [POST]
+Traceback (most recent call last):
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/getophfu/newcaterandmerger/server.py", line 205, in login
+    if form.validate_on_submit():
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask_wtf/form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate(extra_validators=extra_validators)
+TypeError: validate() got an unexpected keyword argument 'extra_validators'
+[2024-03-24 09:27:15,065] ERROR in app: Exception on /login [POST]
+Traceback (most recent call last):
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/getophfu/newcaterandmerger/server.py", line 205, in login
+    if form.validate_on_submit():
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask_wtf/form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate(extra_validators=extra_validators)
+TypeError: validate() got an unexpected keyword argument 'extra_validators'
+[2024-03-24 09:27:19,614] ERROR in app: Exception on /login [POST]
+Traceback (most recent call last):
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/getophfu/newcaterandmerger/server.py", line 205, in login
+    if form.validate_on_submit():
+  File "/home/getophfu/virtualenv/newcaterandmerger/3.8/lib/python3.8/site-packages/flask_wtf/form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate(extra_validators=extra_validators)
+TypeError: validate() got an unexpected keyword argument 'extra_validators'
+[UID:2603][3510435] UPLOAD_FOLDER: /home/getophfu/newcaterandmerger/static/uploads
+Saving to: static/uploads/ukfinal.jpg
+UPLOAD_FOLDER: /home/getophfu/newcaterandmerger/static/uploads
+Saving to: static/uploads/afbd.jpg
+UPLOAD_FOLDER: /home/getophfu/newcaterandmerger/static/uploads
+Saving to: static/uploads/moor-farm-1.jpg
+UPLOAD_FOLDER: /home/getophfu/newcaterandmerger/static/uploads
+Saving to: static/uploads/ps4-600x514.jpg
+OSError: LSAPI: Socket read/write error

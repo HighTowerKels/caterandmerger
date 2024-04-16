@@ -1,0 +1,105 @@
+<!-- templates/signup.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Sign Up</title>
+    <style>
+           /* templates/css/style.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #007bb5;
+}
+
+/* Error messages */
+.error {
+  color: #d9534f;
+  margin-top: 5px;
+}
+
+    </style>
+</head>
+<body>
+
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <ul class="flash-messages">
+            {% for message in messages %}
+                <li class="flash-message">{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endwith %}
+  
+    <form method="POST" action="{{ url_for('signup') }}">
+        <h1>Sign Up</h1>
+        {{ form.hidden_tag() }}
+        <label for="username">Username:</label>
+        {{ form.username(class="form-control", placeholder="Enter your username") }}
+        {{ form.username.errors }}
+        <br>
+        <label for="email">Email:</label>
+        {{ form.email(class="form-control", placeholder="Enter your email") }}
+        {{ form.email.errors }}
+        <br>
+        <label for="password">Password:</label>
+        {{ form.password(class="form-control", placeholder="Enter your password") }}
+        <div class="error">
+            {{ form.password.errors }}
+
+        </div>
+        <br>
+        <button type="submit">Sign Up</button>
+    </form>
+</body>
+</html>

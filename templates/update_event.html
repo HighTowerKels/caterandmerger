@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Event</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+input,
+textarea,
+button {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+}
+
+button {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0b7dda;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('dashboard') }}">Back to dashboard</a></li>
+        </ul>
+    </nav>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <ul>
+            {% for message in messages %}
+                <li class="message">{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endwith %}
+
+    <h2 style="text-align: center;">Update Event</h2>
+    <form method="POST" action="{{ url_for('update_event', event_id=event.id) }}" enctype="multipart/form-data">
+        <!-- Add your form fields for updating an event -->
+        Title: <input type="text" name="title" value="{{ event.title }}" required><br>
+        Content: <textarea name="content" required>{{ event.content }}</textarea><br>
+        Main Image: <input type="file" name="main_image" accept=".png, .jpg, .jpeg, .gif"><br>
+        <button type="submit">Update Event</button>
+    </form>
+</body>
+</html>

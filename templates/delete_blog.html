@@ -1,0 +1,45 @@
+<!-- templates/delete_blog.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Blog Post</title>
+    <style>
+        .btn {
+  text-decoration: none;
+  color: #fff;
+  background-color:red ;
+  padding: 5px 10px;
+  border-radius: 3px;
+  display: inline-block;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('dashboard') }}">Back to dashboard</a></li>
+        </ul>
+    </nav>
+
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <ul>
+            {% for message in messages %}
+                <li class="message">{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endwith %}
+
+    <h1>Delete Blog Post</h1>
+
+    <p>Are you sure you want to delete the blog post titled "{{ blog.title }}"?</p>
+
+    <form method="post">
+        <button class="btn" type="submit">Delete Blog Post</button>
+    </form>
+</body>
+</html>

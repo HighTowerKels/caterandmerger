@@ -1,0 +1,90 @@
+<!-- templates/blog_list.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog List</title>
+    <style>
+        .fixed-height-image {
+  height: 200px; /* Set your preferred height here */
+  object-fit: cover; /* Maintain aspect ratio and cover container */
+}
+
+    </style>
+</head>
+<body>
+    {% include 'header.html' %}
+    <div class="container-fluid px-md-5  pt-4 pt-md-5">
+        <div class="row justify-content-between">
+        <div class="col-md-8 order-md-last">
+        <div class="row">
+        <div class="col-md-6 text-center">
+        <a class="navbar-brand" href="" style="color: rgb(5, 67, 172)">Cater <span>&</span> Merger <small>Consult Limited</small></a>
+        </div>
+        <div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
+        
+        </div>
+        </div>
+        </div>
+        <div class="col-md-4 d-flex">
+          <div class="social-media">
+            <p class="mb-0 d-flex">
+              <ul class="ftco-footer-social list-unstyled mt-2">
+                <li class="ftco-animate"><img width="40" height="20" style="margin-top: 5%; margin-left: 10%; display: flex; align-items: center; justify-content: center; justify-items: center;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQ0lEQVR4nO2ZSWgUQRSGPxP3xGg08aDihoGAoqC4ILhE8RA8mMQFDwrRmyclKiIoaoKeFCEg5qAHvagHcQkIOQgqGBCMC+4QEVcUl2iMC0ZtKfgHHmMy0zNJujtkfiiY+ee9qvemq/561QUZZJBBVzAaqAFuA22AF3BrA24B1UBhukmsAlpDCN7rpH0BKtJJ4q86OAcsAnIIHjnAYuC8YvkDlKcynWJPYjvRwQ7F9Bko8ONQY55E1HBRse3zY3xHxm46RQ0lis0JQFJ8lXEu0cMwxeamflLEVCKq8PzG16cSOZxE8ytTCGwk8ER+td0Un2/DQcDdBIm4dVbkY6wBwGX5XAL6B52Iw1TghzbOUsOflv91IDuBfz/ghGzvA8PDXCPbZPsaGCVuBPBc/K4Evrtl8wYY73O8Hksky0wNu4EuVDnRDsztwG+1nuR3YI7PsXpctcYCH+WzwfCHxDXH7UmzgW9KtCyFcQKR35Wm7C4yghCrEo6Kmwi8E1eV4hiB7SMn5ddo1GeaBMHx64GH+lyXRv+BJeJU55l89xh+S5w0N/iU2VB39gXAby3yeUZmG8zhyK/Mhl6iHJD/UxV5DmOAD+I3daHvQBNx0+aG+jhm+DJxTrGKe0vRWKyAXT9rDH9cXBMwsDckMsHI7HtNLbSfNIvfH/VE8oB76uOTUSq36JEItEsUnDhEMpFsoF7+V4FxwFt932zs9op7AeRHMZEj8n1kAixVXfUTmG4EoVG2rgKOVCJV8nMyOyXutzpTrg8WN9m8dloblUSWa867cmR+B78PBR6r34OG3yiuJYVS3uupRGaqWHTTZ10Cu1nAL1W9Sw1/xqyprLAScbL60schKv4w9cocxPK16B2/tTvj82uYq7f0zvaUkddEcP/4FfmcNfwyIwgzuik+X4ZOZi/I7prOHn4xScWj10l7AAwJKpFaUximc29RmSART6+buhJfaoYhwetzibRG+CV2njmgJUVMidxNUdSwxBwDkqJaxu66K2qoV2yu6EyKQiOP7rorKthpypnYZpoUFSolPF13lYS0ZnI1nWJPwsW0ItVOynXx6EWktaSTRAwFunhsMldyQbZW4KbWhO/plEEGGfAf/gHWUtlOdMJ2cAAAAABJRU5ErkJggg==">
+                </li>
+                <li class="ftco-animate"><img width="40" height="20" style="margin-top: 5%; margin-left: 10%; display: flex; align-items: center; justify-content: center; justify-items: center;" src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new"/></li>
+                <li class="ftco-animate"><img width="40" height="20" style="margin-top: 5%; margin-left: 10%; display: flex; align-items: center; justify-content: center; justify-items: center;" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/></li>
+                </ul>
+            </p>
+            </div>
+        </div>
+        </div>
+        </div>
+        {% include 'nav.html' %}
+  
+    <!-- <ul>
+        {% for blog in blogs %}
+            <li><a href="{{ url_for('view_blog', blog_id=blog.id) }}">{{ blog.title }}</a></li>
+        {% endfor %}
+    </ul> -->
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {% for blog in blogs %}
+          <article class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
+            <img
+              alt="Office"
+              src="{{ url_for('static', filename='uploads/' + blog.main_image_filename) }}"
+              class="h-56 w-full object-cover fixed-height-image"
+            />
+      
+            <div class="p-4 sm:p-6">
+              <a href="#">
+                <h3 class="text-lg font-medium text-gray-900">
+                  <a href="{{ url_for('view_blog', blog_id=blog.id) }}">{{ blog.title }}</a>
+                </h3>
+              </a>
+      
+              <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                {{ blog.content }}
+              </p>
+      
+              <a href="{{ url_for('view_blog', blog_id=blog.id) }}" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
+                Find out more
+      
+                <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
+                  &rarr;
+                </span>
+              </a>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+      
+      
+
+
+      {% include 'footer.html' %}
+</body>
+</html>

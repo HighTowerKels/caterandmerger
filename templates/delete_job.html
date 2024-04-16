@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Job</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+p {
+    color: #ff3333;
+}
+
+button {
+    background-color: #ff3333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e60000;
+}
+
+    </style>
+</head>
+<body>
+    <h2>Delete Job</h2>
+    <p>Are you sure you want to delete the job "{{ job.title }}"?</p>
+    <form method="POST" action="{{ url_for('delete_job', job_id=job.id) }}">
+        <button type="submit">Delete Job</button>
+    </form>
+</body>
+</html>

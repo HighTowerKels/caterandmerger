@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Job</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+input,
+textarea,
+button {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+    </style>
+</head>
+<body>
+    <h2>Create Job</h2>
+    <form method="POST" action="{{ url_for('create_job') }}" enctype="multipart/form-data">
+        <!-- Add your form fields for creating a job -->
+        Title: <input type="text" name="title" required><br>
+        Content: <textarea name="content" required></textarea><br>
+        Main Image: <input type="file" name="main_image" accept=".png, .jpg, .jpeg, .gif" required><br>
+        <button type="submit">Create Job</button>
+    </form>
+</body>
+</html>

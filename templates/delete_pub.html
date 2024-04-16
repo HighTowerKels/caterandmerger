@@ -1,0 +1,31 @@
+<!-- delete_pub.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Publication</title>
+    <!-- Add your CSS link here -->
+</head>
+<body>
+    <h1>Delete Publication</h1>
+
+    <div>
+        <h2>{{ publication.title }}</h2>
+        {% if publication.main_image %}
+            <img src="{{ url_for('static', filename='uploads/' + publication.main_image_filename) }}" alt="Publication Image">
+        {% endif %}
+        <p>{{ publication.content }}</p>
+        <!-- Add more details as needed -->
+    </div>
+
+    <form method="POST" action="{{ url_for('delete_publication', publication_id=publication.id) }}">
+        <button type="submit">Delete Publication</button>
+    </form>
+
+    <!-- Add navigation or other elements as needed -->
+
+</body>
+</html>

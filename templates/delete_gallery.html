@@ -1,0 +1,30 @@
+<!-- delete_gallery.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Gallery</title>
+    <!-- Add your CSS link here -->
+</head>
+<body>
+    <h1>Delete Gallery</h1>
+
+    <div>
+        <h2>{{ gallery.description }}</h2>
+        {% if gallery.main_image %}
+            <img src="{{ url_for('static', filename='uploads/' + gallery.main_image_filename) }}" alt="Gallery Image">
+        {% endif %}
+        <!-- Add more details as needed -->
+    </div>
+
+    <form method="POST" action="{{ url_for('delete_gallery', gallery_id=gallery.id) }}">
+        <button type="submit">Delete Gallery</button>
+    </form>
+
+    <!-- Add navigation or other elements as needed -->
+
+</body>
+</html>

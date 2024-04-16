@@ -1,0 +1,104 @@
+<!-- blog_list.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Blogs</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* styles.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.blog-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog-title h1 {
+  margin: 0;
+}
+
+.blog-actions {
+  margin-left: auto;
+}
+
+a.btn , .btns {
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  display: inline-block;
+}
+.btns{
+    background-color:red;
+
+}
+
+a.btn:hover {
+  background-color: #0056b3;
+}
+
+  </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('dashboard') }}">Back to dashboard</a></li>
+        </ul>
+    </nav>
+
+<div class="container">
+  {% block content %}
+    <h2>List of Blogs</h2>
+    <ul>
+      {% for blog in blog %}
+        <li class="blog-item">
+          <div class="blog-title">
+            <h1>{{ blog.title }}</h1>
+          </div>
+          <div class="blog-actions">
+            <a href="{{ url_for('update_blog', blog_id=blog.id) }}" class="btn  btn-sm">Update</a>
+          </div>
+          <div class="blog-actions">
+            <a href="{{ url_for('delete_blog', blog_id=blog.id) }}" class="btns  btn-sm">Delete</a>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endblock %}
+</div>
+
+</body>
+</html>

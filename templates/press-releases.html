@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from themezinho.net/uon/press-releases.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Feb 2024 09:44:54 GMT -->
+{% include 'nav.html' %}
+<!-- Mirrored from themezinho.net/uon/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Feb 2024 09:43:55 GMT -->
+<style>
+  .training-category {
+  margin-bottom: 30px;
+}
+
+.training-category h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.training-category ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.training-category li {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.custom-bullet {
+  list-style: none;
+  padding: 0;
+}
+
+.custom-bullet li {
+  position: relative;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.custom-bullet li:before {
+  content: '\2022';
+  position: absolute;
+  left: 0;
+  color: #007bff; /* Choose your desired color */
+}
+</style>
+<body>
+  {% include 'header.html' %}
+<!-- end header -->
+<section class="page-header">
+	<div class="container">
+	 <a href="javascript:window.print()" class="print">PRINT PAGE <img src="../static/images/icon-print.png" alt="Image"></a>
+		 <ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="#">Home</a></li>
+			<li class="breadcrumb-item"><a href="#">Corpration</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Press Releases</li>
+		  </ol>
+		  <h2>NEWS</h2>
+	</div>
+	<!-- end container -->
+</section>
+<!-- end page-header -->
+<section class="press-relases">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-12">
+				<div class="section-title"> <span>01</span>
+          <h2>press releases</h2>
+        </div>
+        <!-- end section-title -->
+			</div>
+			<!-- end col-12 -->
+			{% for blog in blogs %}
+
+			<div class="col-lg-3 col-md-4">
+				<a href="{{ url_for('view_blog', blog_id=blog.id) }}">
+					<figure>
+						<a href="{{ url_for('view_blog', blog_id=blog.id) }}" > <img
+							alt="Office"
+							src="{{ url_for('static', filename='uploads/' + blog.main_image_filename) }}"
+						  /></a>
+						<figcaption>
+							<h5>{{ blog.title }}</h5>
+							<p>              {{ blog.content }}
+							</p>
+							<small>26 November 2018</small>
+						</figcaption>
+						</figure>
+				</a>
+			
+			</div>
+			{% endfor %}
+			<!-- end col-3 -->
+			
+			<!-- end col-3 -->
+		</div>
+		<!-- end row -->
+	</div>
+	<!-- end container -->
+</section>
+<!-- end press-relases -->
+{% include 'footer.html' %}
+
+</body>
+
+<!-- Mirrored from themezinho.net/uon/press-releases.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Feb 2024 09:44:54 GMT -->
+</html>

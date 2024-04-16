@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Event</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+p {
+    color: #ff3333;
+}
+
+button {
+    background-color: #ff3333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e60000;
+}
+
+    </style>
+</head>
+<body>
+    <h2>Delete Event</h2>
+    <p>Are you sure you want to delete the event "{{ event.title }}"?</p>
+    <form method="POST" action="{{ url_for('delete_event', event_id=event.id) }}">
+        <button type="submit">Delete Event</button>
+    </form>
+</body>
+</html>

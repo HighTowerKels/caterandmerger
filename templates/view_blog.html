@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from themezinho.net/uon/news-single-sidebar-right.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Feb 2024 09:45:08 GMT -->
+{% include 'nav.html' %}
+<!-- Mirrored from themezinho.net/uon/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Feb 2024 09:43:55 GMT -->
+<style>
+  .training-category {
+  margin-bottom: 30px;
+}
+
+.training-category h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.training-category ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.training-category li {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.custom-bullet {
+  list-style: none;
+  padding: 0;
+}
+
+.custom-bullet li {
+  position: relative;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.custom-bullet li:before {
+  content: '\2022';
+  position: absolute;
+  left: 0;
+  color: #007bff; /* Choose your desired color */
+}
+</style>
+<body>
+  {% include 'header.html' %}
+<!-- end header -->
+<section class="page-header">
+	<div class="container">
+	 <a href="javascript:window.print()" class="print">PRINT PAGE <img src="../static/images/icon-print.png" alt="Image"></a>
+		 <ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="/">Home</a></li>
+			<li class="breadcrumb-item"><a href="#">Corpration</a></li>
+			<li class="breadcrumb-item active" aria-current="page">News</li>
+		  </ol>
+		  <h2>  {{ blog.title }}</h2>
+	</div>
+	<!-- end container -->
+</section>
+<!-- end page-header -->
+  <section class="blog">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-7 col-12">
+         <div class="post no-margin">
+            {% if blog.main_image_filename %}
+         	<figure class="post-image"> <img src="{{ url_for('static', filename='uploads/' + blog.main_image_filename) }}" alt="Image"></figure>
+             {% endif %}
+            <div class="post-content">
+         
+          <h4>{{ blog.title }}</h4>
+          <span> {{ blog.sub_title }}</span>
+        
+          <ul class="social-share">
+  <li><a href="https://web.facebook.com/CaterAndMergerConsult/?_rdc=1&_rdr" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/caterandmerger?lang=en" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/cater-and-merger-consult-670363200/?originalSubdomain=ng" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://www.instagram.com/caterandmergerconsultltd/" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+		  </ul>
+          <p style="font-size: 20px; color: black; line-height: 25px" >
+            {{ blog.content }}
+          </p>
+              <blockquote>
+                <p>{{ blog.contentone }}</p>
+              </blockquote>
+              <p style="font-size: 20px; color: black; line-height: 25px"> {{ blog.contenttwo }}</p>
+
+              {% if blog.main_image_one_filename %}
+              <figure class="post-image"> <img src="{{ url_for('static', filename='uploads/' + blog.main_image_one_filename) }}" alt="Image"></figure>
+              {% endif %}
+
+              {% if blog.main_image_two_filename %}
+              <figure class="post-image"> <img src="{{ url_for('static', filename='uploads/' + blog.main_image_two_filename) }}" alt="Image"></figure>
+              {% endif %}
+            
+              
+              <p style="font-size: 20px; color: black; line-height: 25px;"> {{ blog.contentthree }} </p>
+         	</div>
+         	<!-- end post-content -->
+         </div>
+         <!-- end post -->
+        </div>
+        <!-- end col-7 -->
+        <div class="col-md-5 col-12">
+          <aside class="sidebar">
+            <div class="col-span-1">
+                <h2 class="text-xl font-semibold mb-8">Popular Blogs</h2>
+                <!-- Add your popular blogs list here -->
+                <div class="grid gap-6 ">
+                   {% for blog in blogs[:3] %}
+    <article id="art" class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
+        <img style="height: 10rem; width: 100%"
+            alt="Office"
+            src="{{ url_for('static', filename='uploads/' + blog.main_image_filename) }}"
+            class="w-full object-cover fixed-height-image"
+        /> 
+
+        <div class="p-4 sm:p-6">
+            <a style="width: auto; height: auto; white-space: wrap; overflow: hidden;" href="{{ url_for('view_blog', blog_id=blog.id) }}">
+                <h3 style="font-size:16px" class="font-medium text-gray-900">
+                    {{ blog.title }}
+                </h3>
+            </a>
+
+            <a href="{{ url_for('view_blog', blog_id=blog.id) }}" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
+                Find out more
+                <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
+                    &rarr;
+                </span>
+            </a>
+        </div>
+    </article>
+{% endfor %}
+
+                </div>
+                
+                
+            <br>
+            </div>
+            <!-- end widget -->
+          
+            <!-- end widget --> 
+          </aside>
+          <!-- end side-bar --> 
+        </div>
+        <!-- end col-5 --> 
+      </div>
+      <!-- end row --> 
+    </div>
+    <!-- end container --> 
+  </section>
+  <!-- end blog --> 
+  {% include 'footer.html' %}
+
+</body>
+
+<!-- Mirrored from themezinho.net/uon/news-single-sidebar-right.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Feb 2024 09:45:08 GMT -->
+</html>
